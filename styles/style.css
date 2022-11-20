@@ -1,0 +1,42 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Xanh+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+body {
+  background-image: linear-gradient(#B91372,#6B0F1A);
+}
+
+
+
+p {
+  background-color: rgb(255, 255, 255);
+}
+
+h2 {
+  color: rgb(5, 1, 1);
+  font-family:  'Xanh Mono', monospace;
+}
+
+h4{
+  color:rgb(87, 15, 57);
+  font-family:'Acme', sans-serif;
+}
+.mb-3{
+  color:darkgray;
+  font-family: 'Acme', sans-serif;
+}
+
+.form-group{
+  color:darkgrey;
+  font-family:'Acme', sans-serif;
+}
+
+p{
+  color:darkgrey;
+  font-family:'Acme', sans-serif;
+}
+
+.dependent{
+  color:darkgrey;
+  font-family:'Acme', sans-serif;
+}
