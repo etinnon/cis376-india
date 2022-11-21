@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<!-- doctype declaration: we are using HTML5 -->
+
+<html lang="en">
+
+<!-- header is "invisible" info about the page -->
+
+<head>
+    <meta charset="UTF-8">
+    <title>lab-hotel</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+ <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css'>
+ <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<!-- visible portion of the page -->
+
+<body>
+<h2>Welcome to the Pitbull Fan Club Homepage!</h2>
+<h4>Sign up below today!</h4>
+<br>
+<img src="https://www.tampabay.com/resizer/WQMIElHf0rgeEQiRDDciw8NUBfs=/1200x1200/smart/cloudfront-us-east-1.images.arcpublishing.com/tbt/3KZY53VN6ZH53H7MPSLO4ILE6A.JPG" alt="" height="200" width="200">
+  <!---form-->
+  <form>
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Email address</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="abc@gmail.com" required>
+      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Password</label>
+      <input type="password" class="form-control" id="exampleInputPassword1" required>
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPhone" class="form-label">Phone Number</label>
+      <input type="tel" class="form-control" id="exampleInputPhone" placeholder="(250) ###-####" required>
+    </div>
+  <br>
+    <!---Age-->
+    <div class="form-group">
+      <label for="exampleFormControlSelect1">Select your age group</label>
+      <select class="form-control" id="exampleFormControlSelect1">
+        <option>15-25</option>
+        <option>26-36</option>
+        <option>37-47</option>
+        <option>47-57</option>
+        <option>58+</option>
+      </select>
+    </div>
+    <br>
+<!--Birthday date-->
+<label for="start">Enter your Birthday:</label>
+
+<input type="date" id="start" name="start"
+       value="2022-11-07"
+       min="1940-01-01" max="2021-12-31" required>
+
+<p id="output"></p>
+<br>
+<!--Shirt size-->
+<p>Select your shirt size:</p>
+<div>
+  <input type="radio" name="size" value="XS" id="xs" required>
+  <label for="xs">XS</label>
+</div>
+<div>
+  <input type="radio" name="size" value="S" id="s" required>
+  <label for="s">S</label>
+</div>
+<div>
+  <input type="radio" name="size" value="M" id="m" required>
+  <label for="m">M</label>
+</div>
+<div>
+  <input type="radio" name="size" value="L" id="l" required>
+  <label for="l">L</label>
+</div>
+<div>
+  <input type="radio" name="size" value="XL" id="xl" required>
+  <label for="xl">XL</label>
+</div>
+<div>
+  <input type="radio" name="size" value="XXL" id="xxl" required>
+  <label for="xxl">XXL</label>
+</div>
+<br>
+
+<div class="mb-3">
+  <label for="song" class="form-label">What's your favorite Pitbull song?</label>
+  <input type="text" class="form-control" id="song" aria-describedby="emailHelp" required>
+</div>
+
+<!--Dependent data-->
+<div class="dependent">
+<form name="form1" id="form1" action="/action_page.php">
+  Tshirt Color: <select name="subject" id="subject">
+    <option value="" selected="selected">Select tshirt color</option>
+  </select>
+  <br><br>
+  2: <select name="topic" id="topic">
+    <option value="" selected="selected">Please select dark or light color first</option>
+  </select>
+  <br><br>
+  3: <select name="chapter" id="chapter">
+    <option value="" selected="selected">Please select color area</option>
+  </select>
+  <br><br>
+
+</form>
+</div>
+
+<!--Checkbox-->
+<div class="mb-3">
+Do you want to receive Fan Club newsletters from us?: <input type="checkbox" id="myCheck" onclick="myFunction()">
+</div>
+<p id="text" style="display:none">Yay true fan!</p>
+<br>
+<!--Text area-->
+<div class="form-group">
+      <label for="exampleFormControlTextarea1">Anything else you would like us to know?</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
+    <button type="submit" class="btn btn-secondary">Submit</button>
+    <div class="row">
+      <div class="col-sm-1">
+          <div id="nameOutput"></div>
+          <button id="btnClear" class="btn btn-secondary">Clear</button>
+      </div>
+
+  </form>
+  <footer class="bg-light text-center text-lg-start">
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      Emily Tinnon: 
+      <a class="text-dark" href="https://github.com/etinnon/cis376-india">See the Code!</a>
+      <a class="text-dark" href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fetinnon.github.io%2Fcis376-india%2F">Check Validity!</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+</body>
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+
+<script src="scripts/script.js"></script>
+
+</html>
